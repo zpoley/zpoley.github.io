@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://zacharypoley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zacharypoley.com/" rel="alternate" type="text/html" /><updated>2020-03-05T23:09:14-08:00</updated><id>https://zacharypoley.com/feed.xml</id><title type="html">Zachary Poley</title><subtitle>A place to share my notes and ideas.</subtitle><author><name>Zachary Poley</name><email>zpoley@gmail.com</email></author><entry><title type="html">Blog Inspiration</title><link href="https://zacharypoley.com/posts/2020/03/blog-inspiration.html" rel="alternate" type="text/html" title="Blog Inspiration" /><published>2020-03-03T11:00:00-08:00</published><updated>2020-03-03T11:00:00-08:00</updated><id>https://zacharypoley.com/posts/2020/03/blog-inspiration</id><content type="html" xml:base="https://zacharypoley.com/posts/2020/03/blog-inspiration.html">&lt;div id=&quot;table-of-contents&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://zacharypoley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zacharypoley.com/" rel="alternate" type="text/html" /><updated>2020-03-05T23:23:05-08:00</updated><id>https://zacharypoley.com/feed.xml</id><title type="html">Zachary Poley</title><subtitle>A place to share my notes and ideas.</subtitle><author><name>Zachary Poley</name><email>zpoley@gmail.com</email></author><entry><title type="html">Blog Inspiration</title><link href="https://zacharypoley.com/posts/2020/03/blog-inspiration.html" rel="alternate" type="text/html" title="Blog Inspiration" /><published>2020-03-03T11:00:00-08:00</published><updated>2020-03-03T11:00:00-08:00</updated><id>https://zacharypoley.com/posts/2020/03/blog-inspiration</id><content type="html" xml:base="https://zacharypoley.com/posts/2020/03/blog-inspiration.html">&lt;div id=&quot;table-of-contents&quot;&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id=&quot;text-table-of-contents&quot;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#a-little-background&quot;&gt;Background&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#inspiration&quot;&gt;Inspiration&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#roadmap-wip&quot;&gt;Roadmap&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#next&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#orga76c784&quot;&gt;Background&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#org70572bd&quot;&gt;Inspiration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#org418f640&quot;&gt;Roadmap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#org5e74c6f&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;
-I've been working on putting this new blog together for a few weeks now. It's taken me a bit longer than I thought it would, but its finally getting to the point where I'm happy with the progress I've made and how it's all coming together. I'm super excited about the &lt;a href=&quot;/notes/blog-setup.html&quot;&gt;underlying Emacs/Spacemacs Org mode setup&lt;/a&gt; and the kinds of &lt;a href=&quot;../tags.html#pkm&quot;&gt;#pkm&lt;/a&gt; hacking that I can see it enabling. I thought it would make a great first post to share a bit about what inspired me to setup this new blog and start blogging again.
+I've been working on putting this new blog together for a few weeks now. It's taken me a bit longer than I thought it would, but its finally getting to the point where I'm happy with the progress I've made and how it's all coming together. I'm super excited about the &lt;a href=&quot;file:///_notes/blog-setup.html&quot;&gt;underlying Emacs/Spacemacs Org mode setup&lt;/a&gt; and the kinds of &lt;a href=&quot;../tags.html#pkm&quot;&gt;#pkm&lt;/a&gt; hacking that I can see it enabling. I thought it would make a great first post to share a bit about what inspired me to setup this new blog and start blogging again.
 &lt;/p&gt;
 
 &lt;!-- endexcerpt --&gt;
 
 &lt;div id=&quot;outline-container-orga76c784&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;a-little-background&quot;&gt;&lt;a href=&quot;#a-little-background&quot;&gt;A Little Background&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;orga76c784&quot;&gt;A Little Background&lt;/h2&gt;
 &lt;div class=&quot;outline-text-2&quot; id=&quot;text-orga76c784&quot;&gt;
 &lt;p&gt;
 I've been doing a lot of research lately, and learning a lot of new things between my work as a software engineering consultant and my own projects.
@@ -31,7 +31,7 @@ I'm also pretty serious about how I take notes and organize my personal knowledg
 I'm not sure where I fall on the spectrum of note takers and Evernote users, but I've been using Evernote pretty heavily, and have accumulated more than 3,000 notes over the past ten years, often creating more than 20 new notes/month. Sometimes creating more than 40 notes a month.
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;chart&quot; style=&quot;width:100%;&quot; src=&quot;/images/notes-by-month.png&quot;/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;chart&quot; style=&quot;width:100%;&quot; src=&quot;/images/notes-by-month.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;
 Before Evernote, and even for some period of time while I began using Evernote I also maintained a daily journal as a text file in &lt;a href=&quot;https://www.vim.org/&quot;&gt;Vim&lt;/a&gt;. I've been using Vim as my primary source code editor for about 15 years, and have developed quite a fondness for all the keyboard shortcuts and efficiency that mouseless text editing enables. 
@@ -44,7 +44,7 @@ As my recent workflow has involved more online research and note taking than nor
 &lt;/div&gt;
 
 &lt;div id=&quot;outline-container-org70572bd&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;inspiration&quot;&gt;&lt;a href=&quot;#inspiration&quot;&gt;Inspiration&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;org70572bd&quot;&gt;Inspiration&lt;/h2&gt;
 &lt;div class=&quot;outline-text-2&quot; id=&quot;text-org70572bd&quot;&gt;
 &lt;p&gt;
 A few weeks ago, at the end of January 2020 I found a post titled &lt;a href=&quot;https://beepb00p.xyz/pkm-search.html&quot;&gt;Building personal search infrastructure for your knowledge and code&lt;/a&gt; on &lt;a href=&quot;https://news.ycombinator.com/item?id=22160572&quot;&gt;Hacker News&lt;/a&gt; by &lt;a href=&quot;https://github.com/karlicoss&quot;&gt;karlicoss&lt;/a&gt;. This post really resonated with me because keeping track of all my notes and bookmarks was something that was contributing to my research and note taking workflow issues. I looked around a bit more on the &lt;a href=&quot;https://beepb00p.xyz&quot;&gt;beepb00p.xyz&lt;/a&gt; blog and found some other interesting articles as well, like:
@@ -98,16 +98,16 @@ The only problem was I'd never used Emacs, or Org mode.
 &lt;/p&gt;
 
 &lt;p&gt;
-I ended up returning and reading nearly all of the articles on &lt;a href=&quot;https://beepb00p.xyz&quot;&gt;beepb00p.xyz&lt;/a&gt; over the course of the past month. I highly recommend checking it out if you're into &lt;a href=&quot;https://beepb00p.xyz/tags.html&quot;&gt;this kind of stuff&lt;/a&gt;. I also spent a lot of time thinking about the content and the blog itself over the past month. There are a lot of details that I really liked, and have tried to reproduce here in my own blog. I'm planning to write another more detailed post about reasoning behind various elements of how I've configured this blog, but for now I've begun to detail the way I'm running the blog in my &lt;a href=&quot;/notes/blog-setup.html&quot;&gt;Blog Setup Notes&lt;/a&gt;.
+I ended up returning and reading nearly all of the articles on &lt;a href=&quot;https://beepb00p.xyz&quot;&gt;beepb00p.xyz&lt;/a&gt; over the course of the past month. I highly recommend checking it out if you're into &lt;a href=&quot;https://beepb00p.xyz/tags.html&quot;&gt;this kind of stuff&lt;/a&gt;. I also spent a lot of time thinking about the content and the blog itself over the past month. There are a lot of details that I really liked, and have tried to reproduce here in my own blog. I'm planning to write another more detailed post about reasoning behind various elements of how I've configured this blog, but for now I've begun to detail the way I'm running the blog in my &lt;a href=&quot;../_notes/blog-setup.html&quot;&gt;Blog Setup Notes&lt;/a&gt;.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div id=&quot;outline-container-org418f640&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;roadmap-wip&quot;&gt;&lt;a href=&quot;#roadmap-wip&quot;&gt;Roadmap #wip&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;org418f640&quot;&gt;Roadmap #wip&lt;/h2&gt;
 &lt;div class=&quot;outline-text-2&quot; id=&quot;text-org418f640&quot;&gt;
 &lt;p&gt;
-I've started learning and using Emacs and Org mode in the hope that they can become foundational elements of my v0.2 &lt;a href=&quot;/tags.html#pkm&quot;&gt;#pkm&lt;/a&gt; system. So far, I'm learning a lot and continually impressed with all the work that people have done to make awesome Emacs plugins. However, it hasn't been without a lot of hard work and head-scratching trying to figure out how to fix a lot of minor issues. I'm not surprised by how many posts I've found about &lt;a href=&quot;https://www.reddit.com/r/emacs/comments/es7sw9/four_years_in_increasingly_unhappy_with_my_emacs/&quot;&gt;the pain and despair of configuring emacs&lt;/a&gt;, or &quot;&lt;a href=&quot;https://alhassy.github.io/init/&quot;&gt;A Life Configuring Emacs&lt;/a&gt;&quot; by &lt;a href=&quot;https://github.com/alhassy&quot;&gt;Musa Al-hassy&lt;/a&gt; that clocks in at a 160 minute read! Trying to get everything just right seems to be a never-ending battle, but I'm getting pretty close to feeling like I have things in a state I can begin to work more with.
+I've started learning and using Emacs and Org mode in the hope that they can become foundational elements of my v0.2 &lt;a href=&quot;file:///tags.html#pkm&quot;&gt;#pkm&lt;/a&gt; system. So far, I'm learning a lot and continually impressed with all the work that people have done to make awesome Emacs plugins. However, it hasn't been without a lot of hard work and head-scratching trying to figure out how to fix a lot of minor issues. I'm not surprised by how many posts I've found about &lt;a href=&quot;https://www.reddit.com/r/emacs/comments/es7sw9/four_years_in_increasingly_unhappy_with_my_emacs/&quot;&gt;the pain and despair of configuring emacs&lt;/a&gt;, or &quot;&lt;a href=&quot;https://alhassy.github.io/init/&quot;&gt;A Life Configuring Emacs&lt;/a&gt;&quot; by &lt;a href=&quot;https://github.com/alhassy&quot;&gt;Musa Al-hassy&lt;/a&gt; that clocks in at a 160 minute read! Trying to get everything just right seems to be a never-ending battle, but I'm getting pretty close to feeling like I have things in a state I can begin to work more with.
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -125,7 +125,7 @@ Anway, in case you're considering exploring Emacs/Org mode, here are a few great
 &lt;/ul&gt;
 
 &lt;p&gt;
-While I'm taking the time to rethink my &lt;a href=&quot;/tags.html#pkm&quot;&gt;#pkm&lt;/a&gt; setup, I figured I should also try to take a step back and get some more perspective from others who've spent a lot of time thinking about these things. I'm currently reading two great books that are already helping me think more deeply about how and what I capture, and how to organize things:
+While I'm taking the time to rethink my &lt;a href=&quot;file:///tags.html#pkm&quot;&gt;#pkm&lt;/a&gt; setup, I figured I should also try to take a step back and get some more perspective from others who've spent a lot of time thinking about these things. I'm currently reading two great books that are already helping me think more deeply about how and what I capture, and how to organize things:
 &lt;/p&gt;
 
 &lt;ul class=&quot;org-ul&quot;&gt;
@@ -143,11 +143,11 @@ I'm still figuring out how to use Emacs and Org mode effectively. I've also foun
 
 &lt;blockquote&gt;
 &lt;p&gt;
-Spacemacs is a new way to experience Emacs – a sophisticated and polished set-up focused on &lt;b&gt;ergnomics, mnemonics and consistency&lt;/b&gt;.
+Spacemacs is a new way to experience Emacs &amp;#x2013; a sophisticated and polished set-up focused on &lt;b&gt;ergnomics, mnemonics and consistency&lt;/b&gt;.
 &lt;/p&gt;
 
 &lt;p&gt;
-– &lt;a href=&quot;https://www.spacemacs.org/&quot;&gt;Spacemacs homepage&lt;/a&gt;
+&amp;#x2013; &lt;a href=&quot;https://www.spacemacs.org/&quot;&gt;Spacemacs homepage&lt;/a&gt;
 &lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -156,7 +156,7 @@ As far as I can tell, Spacemacs is definitely not without its own issues (e.g. I
 &lt;/p&gt;
 
 &lt;p&gt;
-I've also found countless great Emacs and Org related packages, so I started an &lt;a href=&quot;/notes/emacs-package-todo.html&quot;&gt;Emacs Packages TODO List&lt;/a&gt; to keep track of everything I want to try. I haven't had a chance to try them all out yet.
+I've also found countless great Emacs and Org related packages, so I started an &lt;a href=&quot;../_notes/emacs-package-todo.html&quot;&gt;Emacs Packages TODO List&lt;/a&gt; to keep track of everything I want to try. I haven't had a chance to try them all out yet.
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -166,10 +166,10 @@ I'm trying to keep my Emacs config as vanilla as possible given that I know so l
 &lt;/div&gt;
 
 &lt;div id=&quot;outline-container-org5e74c6f&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;next&quot;&gt;&lt;a href=&quot;#next&quot;&gt;Next&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;org5e74c6f&quot;&gt;Next&lt;/h2&gt;
 &lt;div class=&quot;outline-text-2&quot; id=&quot;text-org5e74c6f&quot;&gt;
 &lt;p&gt;
-Now that I've embarked on this journey to rethink my approach to &lt;a href=&quot;https://en.wikipedia.org/wiki/Personal_knowledge_management&quot;&gt;personal knowledge management&lt;/a&gt;,  I'm also trying to better understand the current state of &lt;a href=&quot;/tags.html#pkm&quot;&gt;#pkm&lt;/a&gt; tooling and solutions in the process. I've already begun testing some other tools in this space like &lt;a href=&quot;https://www.notion.so/&quot;&gt;Notion&lt;/a&gt;, &lt;a href=&quot;https://roamresearch.com/&quot;&gt;Roam&lt;/a&gt;, &lt;a href=&quot;https://todoist.com/&quot;&gt;Todoist&lt;/a&gt; and &lt;a href=&quot;https://www.rememberthemilk.com/&quot;&gt;Remember the Milk&lt;/a&gt;, and I'm planning on sharing my thoughts on some of them in upcoming posts. If you have any other suggestions for great tools worth looking at, please let me konw!
+Now that I've embarked on this journey to rethink my approach to &lt;a href=&quot;https://en.wikipedia.org/wiki/Personal_knowledge_management&quot;&gt;personal knowledge management&lt;/a&gt;,  I'm also trying to better understand the current state of &lt;a href=&quot;file:///tags.html#pkm&quot;&gt;#pkm&lt;/a&gt; tooling and solutions in the process. I've already begun testing some other tools in this space like &lt;a href=&quot;https://www.notion.so/&quot;&gt;Notion&lt;/a&gt;, &lt;a href=&quot;https://roamresearch.com/&quot;&gt;Roam&lt;/a&gt;, &lt;a href=&quot;https://todoist.com/&quot;&gt;Todoist&lt;/a&gt; and &lt;a href=&quot;https://www.rememberthemilk.com/&quot;&gt;Remember the Milk&lt;/a&gt;, and I'm planning on sharing my thoughts on some of them in upcoming posts. If you have any other suggestions for great tools worth looking at, please let me konw!
 &lt;/p&gt;
 
 &lt;p&gt;
