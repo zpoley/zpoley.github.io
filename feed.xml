@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://zacharypoley.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zacharypoley.com/" rel="alternate" type="text/html" /><updated>2020-03-05T22:21:23-08:00</updated><id>https://zacharypoley.com/feed.xml</id><title type="html">Zachary Poley</title><subtitle>A place to share my notes and ideas.</subtitle><author><name>Zachary Poley</name><email>zpoley@gmail.com</email></author><entry><title type="html">Blog Inspiration</title><link href="https://zacharypoley.com/posts/2020/03/blog-inspiration.html" rel="alternate" type="text/html" title="Blog Inspiration" /><published>2020-03-03T00:00:00-08:00</published><updated>2020-03-03T00:00:00-08:00</updated><id>https://zacharypoley.com/posts/2020/03/blog-inspiration</id><content type="html" xml:base="https://zacharypoley.com/posts/2020/03/blog-inspiration.html">&lt;div id=&quot;table-of-contents&quot;&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;div id=&quot;text-table-of-contents&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#a-little-background&quot;&gt;Background&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#inspiration&quot;&gt;Inspiration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#roadmap-wip&quot;&gt;Roadmap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#next&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+I've been working on putting this new blog together for a few weeks now. It's taken me a bit longer than I thought it would, but its finally getting to the point where I'm happy with the progress I've made and how it's all coming together. I'm super excited about the &lt;a href=&quot;/notes/blog-setup.html&quot;&gt;underlying Emacs/Spacemacs Org mode setup&lt;/a&gt; and the kinds of &lt;a href=&quot;../tags.html#pkm&quot;&gt;#pkm&lt;/a&gt; hacking that I can see it enabling. I thought it would make a great first post to share a bit about what inspired me to setup this new blog and start blogging again.
+&lt;/p&gt;
+
+&lt;!-- endexcerpt --&gt;
+
+&lt;div id=&quot;outline-container-orga76c784&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;a-little-background&quot;&gt;&lt;a href=&quot;#a-little-background&quot;&gt;A Little Background&lt;/a&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orga76c784&quot;&gt;
+&lt;p&gt;
+I've been doing a lot of research lately, and learning a lot of new things between my work as a software engineering consultant and my own projects.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm also pretty serious about how I take notes and organize my personal knowledge database which currently consists of my notes that I'm storing in &lt;a href=&quot;https://evernote.com/&quot;&gt;Evernote&lt;/a&gt;, a large collection of webpage bookmarks that I had stored in &lt;a href=&quot;https://getpocket.com/&quot;&gt;Pocket&lt;/a&gt; and recently moved to &lt;a href=&quot;https://pinboard.in/&quot;&gt;Pinboard&lt;/a&gt;, and my documents, screenshots and files currently stored in &lt;a href=&quot;https://www.dropbox.com/&quot;&gt;Dropbox&lt;/a&gt; (as well as a few other things that I'm using and testing, and planning to document more in the future).
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm not sure where I fall on the spectrum of note takers and Evernote users, but I've been using Evernote pretty heavily, and have accumulated more than 3,000 notes over the past ten years, often creating more than 20 new notes/month. Sometimes creating more than 40 notes a month.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;chart&quot; style=&quot;width:100%;&quot; src=&quot;/images/notes-by-month.png&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;
+Before Evernote, and even for some period of time while I began using Evernote I also maintained a daily journal as a text file in &lt;a href=&quot;https://www.vim.org/&quot;&gt;Vim&lt;/a&gt;. I've been using Vim as my primary source code editor for about 15 years, and have developed quite a fondness for all the keyboard shortcuts and efficiency that mouseless text editing enables. 
+&lt;/p&gt;
+
+&lt;p&gt;
+As my recent workflow has involved more online research and note taking than normal, I've been noticing the efficiency of my note taking system declining due to a lot of context switching associated with working between Google Chrome with multiple windows and tens of browser tabs, multiple concurrent notes in Evernote, and shifting between research and discovery, writing code, testing, and note taking. I'd been noticing these issues bothering me for a while, but hadn't really given too much thought towards figuring out better ways to work.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-org70572bd&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;inspiration&quot;&gt;&lt;a href=&quot;#inspiration&quot;&gt;Inspiration&lt;/a&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org70572bd&quot;&gt;
+&lt;p&gt;
+A few weeks ago, at the end of January 2020 I found a post titled &lt;a href=&quot;https://beepb00p.xyz/pkm-search.html&quot;&gt;Building personal search infrastructure for your knowledge and code&lt;/a&gt; on &lt;a href=&quot;https://news.ycombinator.com/item?id=22160572&quot;&gt;Hacker News&lt;/a&gt; by &lt;a href=&quot;https://github.com/karlicoss&quot;&gt;karlicoss&lt;/a&gt;. This post really resonated with me because keeping track of all my notes and bookmarks was something that was contributing to my research and note taking workflow issues. I looked around a bit more on the &lt;a href=&quot;https://beepb00p.xyz&quot;&gt;beepb00p.xyz&lt;/a&gt; blog and found some other interesting articles as well, like:
+&lt;/p&gt;
+
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;https://beepb00p.xyz/my-data.html&quot;&gt;What data I collect on myself and why?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://beepb00p.xyz/pkm-setup.html&quot;&gt;How to cope with having fleshy human brain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://beepb00p.xyz/annotating.html&quot;&gt;How to annotate literally everything&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+I've long been interested in reading about other peoples setups, everything from &lt;a href=&quot;https://usesthis.com/&quot;&gt;uses this&lt;/a&gt; to &lt;a href=&quot;https://www.reddit.com/r/battlestations/&quot;&gt;r/battlestations&lt;/a&gt;, or the occasionally hilarious &lt;a href=&quot;https://www.reddit.com/r/PewdiepieSubmissions/comments/f56t6q/rate_my_setup/&quot;&gt;rate my setup&lt;/a&gt; posts. So, when I found the posts above on &lt;a href=&quot;https://beepb00p.xyz&quot;&gt;beepb00p.xyz&lt;/a&gt; I was really intrigued by the level of detail the author goes into while describing their personal knowledge management setup, and discussing the many &lt;a href=&quot;https://github.com/karlicoss?tab=repositories&quot;&gt;GitHub repositories&lt;/a&gt; they've authored to enable their personal knowledge management solutions.
+&lt;/p&gt;
+
+&lt;p&gt;
+At the same time, I had noticed quite a few posts about research, note taking, and knowledge management setups on Hacker News recently (&lt;a href=&quot;https://news.ycombinator.com/item?id=22342256&quot;&gt;others have observed this as well&lt;/a&gt;). Here are a few of them:
+&lt;/p&gt;
+
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=22341518&quot;&gt;How to Take Smart Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=22000791&quot;&gt;Managing my personal knowledge base&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=22087780&quot;&gt;Nototo - Build a unified mental map of notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=22104366&quot;&gt;Roam: Why I Love It and How I Use It&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=22473209&quot;&gt;Ask HN: How to Take Good Notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+There are definitely quite a few more posts like the ones above, but having read a lot these posts and the comments on HN, the big theme that emerged for me was that there are a lot of people using &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; and &lt;a href=&quot;https://orgmode.org/&quot;&gt;Org mode&lt;/a&gt; as their all-in-one notetaking and task tracking system (not to mention &lt;a href=&quot;https://news.ycombinator.com/item?id=7978048&quot;&gt;text editor, and operating system&lt;/a&gt;).
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Having read these posts, and found the &lt;a href=&quot;https://beepb00p.xyz&quot;&gt;beepb00p.xyz&lt;/a&gt; blog; as I was reading beepb00p, I found the &lt;a href=&quot;https://beepb00p.xyz/site.html&quot;&gt;beepb00p site page&lt;/a&gt; where the author goes into more detail about how the blog is setup, and even linked to the &lt;a href=&quot;https://github.com/karlicoss/beepb00p&quot;&gt;github repository for the site&lt;/a&gt;. This is where it all came together for me. I realized that the beepb00p blog was a static site built on top of Org mode files. I like to remember this as my mind blowing moment 🤯. This was exactly the kind of setup I wanted for myself:
+&lt;/p&gt;
+
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;A note taking tool that was free, and hackable.&lt;/li&gt;
+&lt;li&gt;The ability to combine my notes with my todo list, and time tracking.&lt;/li&gt;
+&lt;li&gt;A built in way to share my notes online, and incorporate them into my blog.&lt;/li&gt;
+&lt;li&gt;Limitless keyboard shortcuts to weave together all of my note taking and organizational notes and tasks.&lt;/li&gt;
+&lt;li&gt;A tool that would give me complete control over my data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+I could finally see why so many people are using Emacs and Org mode.
+&lt;/p&gt;
+
+&lt;p&gt;
+The only problem was I'd never used Emacs, or Org mode. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I ended up returning and reading nearly all of the articles on &lt;a href=&quot;https://beepb00p.xyz&quot;&gt;beepb00p.xyz&lt;/a&gt; over the course of the past month. I highly recommend checking it out if you're into &lt;a href=&quot;https://beepb00p.xyz/tags.html&quot;&gt;this kind of stuff&lt;/a&gt;. I also spent a lot of time thinking about the content and the blog itself over the past month. There are a lot of details that I really liked, and have tried to reproduce here in my own blog. I'm planning to write another more detailed post about reasoning behind various elements of how I've configured this blog, but for now I've begun to detail the way I'm running the blog in my &lt;a href=&quot;/notes/blog-setup.html&quot;&gt;Blog Setup Notes&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-org418f640&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;roadmap-wip&quot;&gt;&lt;a href=&quot;#roadmap-wip&quot;&gt;Roadmap #wip&lt;/a&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org418f640&quot;&gt;
+&lt;p&gt;
+I've started learning and using Emacs and Org mode in the hope that they can become foundational elements of my v0.2 &lt;a href=&quot;/tags.html#pkm&quot;&gt;#pkm&lt;/a&gt; system. So far, I'm learning a lot and continually impressed with all the work that people have done to make awesome Emacs plugins. However, it hasn't been without a lot of hard work and head-scratching trying to figure out how to fix a lot of minor issues. I'm not surprised by how many posts I've found about &lt;a href=&quot;https://www.reddit.com/r/emacs/comments/es7sw9/four_years_in_increasingly_unhappy_with_my_emacs/&quot;&gt;the pain and despair of configuring emacs&lt;/a&gt;, or &quot;&lt;a href=&quot;https://alhassy.github.io/init/&quot;&gt;A Life Configuring Emacs&lt;/a&gt;&quot; by &lt;a href=&quot;https://github.com/alhassy&quot;&gt;Musa Al-hassy&lt;/a&gt; that clocks in at a 160 minute read! Trying to get everything just right seems to be a neverending battle, but I'm getting pretty close to feeling like I have things in a state I can begin to work more with.
+&lt;/p&gt;
+
+&lt;p&gt;
+Luckily, I didn't see or focus on any of the more negative posts up front, or I may have dismissed even considered pursuing these tools in the first place. I tried Emacs briefly in the past, but could never get over the default keybindings with so many &lt;code&gt;Ctrl (C-)&lt;/code&gt; and &lt;code&gt;ESC (M-)&lt;/code&gt; key chords. And, when I first found Vim, the search for an editor ended for me.
+&lt;/p&gt;
+
+&lt;p&gt;
+Anway, in case you're considering exploring Emacs/Org mode, here are a few great YouTube videos I watched that gave me a better idea of what I could do with Emacs and Org mode, and how to get from Vim to Org mode:
+&lt;/p&gt;
+
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=SzA2YODtgK4&quot;&gt;Getting Started with Org Mode&lt;/a&gt; by &lt;a href=&quot;https://harryrschwartz.com/&quot;&gt;Harry Schwartz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=JWD1Fpdd4Pc&quot;&gt;Evil Mode: Or, How I Learned to Stop Worrying and Love Emacs&lt;/a&gt; by &lt;a href=&quot;https://aaronbieber.com/&quot;&gt;Aaron Bieber&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=oJTwQvgfgMM&quot;&gt;Emacs Org-mode - a system for note-taking and project planning&lt;/a&gt; by &lt;a href=&quot;https://staff.fnwi.uva.nl/c.dominik/&quot;&gt;Carsten Dominik&lt;/a&gt;, the creator of Org mode&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+While I'm taking the time to rethink my &lt;a href=&quot;/tags.html#pkm&quot;&gt;#pkm&lt;/a&gt; setup, I figured I should also try to take a step back and get some more perspective from others who've spent a lot of time thinking about these things. I'm currently reading two great books that are already helping me think more deeply about how and what I capture, and how to organize things:
+&lt;/p&gt;
+
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.amazon.com/How-Take-Smart-Notes-Nonfiction-ebook/dp/B06WVYW33Y&quot;&gt;How to Take Smart Notes&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/soenke_ahrens&quot;&gt;Sönke Ahrens&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0143126563/ref=sr_1_1&quot;&gt;Getting Things Done&lt;/a&gt; by &lt;a href=&quot;https://en.wikipedia.org/wiki/David_Allen_(author)&quot;&gt;David Allen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+I'm going to continue reading these two books and taking notes, and will share an update once I've figured out how I might incorporate them into my system.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm still figuring out how to use Emacs and Org mode effectively. I've also found and adopted &lt;a href=&quot;https://www.spacemacs.org/&quot;&gt;Spacemacs&lt;/a&gt; (&lt;a href=&quot;https://github.com/syl20bnr/spacemacs/tree/develop&quot;&gt;develop branch&lt;/a&gt;), which really resonated with me once I was deep in keybinding hell trying to figure out all the minor differences between Vim and Emacs &lt;a href=&quot;https://github.com/emacs-evil/evil&quot;&gt;Evil Mode&lt;/a&gt;. When I finally stumbled back onto the Spacemacs homepage (probably from somewhere on Reddit, looking for keybinding advice), the Spacemacs &quot;mantra&quot; felt like a message from god:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Spacemacs is a new way to experience Emacs – a sophisticated and polished set-up focused on &lt;b&gt;ergnomics, mnemonics and consistency&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+– &lt;a href=&quot;https://www.spacemacs.org/&quot;&gt;Spacemacs homepage&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+As far as I can tell, Spacemacs is definitely not without its own issues (e.g. I'm on the develop branch because of plugin issues in master). However, by combining &lt;b&gt;ergonomics&lt;/b&gt;, &lt;b&gt;mnemonics&lt;/b&gt;, and &lt;b&gt;consistency&lt;/b&gt;, with the &lt;b&gt;discoverability&lt;/b&gt; of the &lt;code&gt;SPC&lt;/code&gt; keybinding menuing system, Spacemacs seems like a great Emacs starter kit that is pretty exciting for me (especially considering that there seems to be some pretty &lt;a href=&quot;https://github.com/syl20bnr/spacemacs/commits/develop&quot;&gt;active development taking place in the develop branch&lt;/a&gt;).
+&lt;/p&gt;
+
+&lt;p&gt;
+I've also found countless great Emacs and Org related packages, so I started an &lt;a href=&quot;/notes/emacs-page-todo.html&quot;&gt;Emacs Packages TODO List&lt;/a&gt; to keep track of everything I want to try. I haven't had a chance to try them all out yet.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm trying to keep my Emacs config as vanilla as possible given that I know so little about how congifuration changes might cause problems. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-org5e74c6f&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;next&quot;&gt;&lt;a href=&quot;#next&quot;&gt;Next&lt;/a&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org5e74c6f&quot;&gt;
+&lt;p&gt;
+Now that I've embarked on this journey to rethink my approach to &lt;a href=&quot;https://en.wikipedia.org/wiki/Personal_knowledge_management&quot;&gt;personal knowledge management&lt;/a&gt;,  I'm also trying to better understand the current state of &lt;a href=&quot;/tags.html#pkm&quot;&gt;#pkm&lt;/a&gt; tooling and solutions in the process. I've already begun testing some other tools in this space like &lt;a href=&quot;https://www.notion.so/&quot;&gt;Notion&lt;/a&gt;, &lt;a href=&quot;https://roamresearch.com/&quot;&gt;Roam&lt;/a&gt;, &lt;a href=&quot;https://todoist.com/&quot;&gt;Todoist&lt;/a&gt; and &lt;a href=&quot;https://www.rememberthemilk.com/&quot;&gt;Remember the Milk&lt;/a&gt;, and I'm planning on sharing my thoughts on some of them in upcoming posts. If you have any other suggestions for great tools worth looking at, please let me konw!
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm looking forward to sharing my notes and ideas on this blog, and hoping that I might be able to find some other like-minded people to have good discussions with.
+&lt;/p&gt;
+
+&lt;div class=&quot;aside&quot;&gt;
+&lt;p&gt;
+Please leave a comment and say hi below, or feel free to get in touch with me at &lt;a href=&quot;mailto:zpoley@gmail.com&quot;&gt;zpoley@gmail.com&lt;/a&gt; if you'd like to say hi, or have any questions. 
+&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name>Zachary Poley</name><email>zpoley@gmail.com</email></author><summary type="html">Table of Contents Background Inspiration Roadmap Next I've been working on putting this new blog together for a few weeks now. It's taken me a bit longer than I thought it would, but its finally getting to the point where I'm happy with the progress I've made and how it's all coming together. I'm super excited about the underlying Emacs/Spacemacs Org mode setup and the kinds of #pkm hacking that I can see it enabling. I thought it would make a great first post to share a bit about what inspired me to setup this new blog and start blogging again.</summary></entry></feed>
