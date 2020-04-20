@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Emacs Commands | Zachary Poley</title>
+  <meta name="generator" content="Jekyll v4.0.0" />
+  <meta property="og:title" content="Emacs Commands" />
+  <meta name="author" content="Zachary Poley" />
+  <meta property="og:locale" content="en_US" />
+
+  <link rel="canonical" href="" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="Zachary Poley" />
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2020-03-18 00:00:00 -0700" />
+
+
+  <link rel="stylesheet" href="/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Zachary Poley" />
+<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Zachary Poley</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+					<a class="page-link" href="/">Posts</a><a class="page-link" href="/drafts">Drafts</a><a class="page-link" href="/notes">Notes</a><a class="page-link" href="/tags">Tags</a><a class="page-link" href="/about">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Emacs Commands</h1>
+        <div class="tags"><span class="tag">
+              <a href="/tags#emacs">
+                #emacs
+              </a>
+            </span><span class="tag">
+              <a href="/tags#orgmode">
+                #orgmode
+              </a>
+            </span><span class="tag">
+              <a href="/tags#spacemacs">
+                #spacemacs
+              </a>
+            </span></div><div class="post-meta"><time class="dt-published" datetime="2020-03-18T00:00:00-07:00" itemprop="datePublished">
+        March 18, 2020
+      </time><div>
+          Updated<time class="dt-modified time-stamp" datetime="April 20, 2020" itemprop="dateModified">
+            April 20, 2020
+          </time>
+        </div></div>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#important">Important</a></li>
+<li><a href="#windows">Windows</a></li>
+<li><a href="#workspaces">Workspaces</a></li>
+<li><a href="#files-and-buffers">Files and Buffers</a></li>
+<li><a href="#org-mode">Org mode</a></li>
+<li><a href="#git-magit">Git / Magit</a></li>
+</ul>
+</div>
+</div>
+
+<p>
+I'm keeping this list here as a reminder for myself of all the Emacs and Spacemacs commands I'm learning and finding useful:
+</p>
+
+<div id="outline-container-orgdb3b709" class="outline-2">
+<h2 id="important"><a class="internal-link" href="#important">Important</a></h2>
+<div class="outline-text-2" id="text-orgdb3b709">
+<ul class="org-ul">
+<li><code>C-g</code>: Quit current command sequence. Update <span class="timestamp-wrapper"><span class="timestamp"><span class="time"> 4:10 pm</span><span class="sep"> </span><span class="date">April 10, 2020</span></span></span>: Also bound <code>C-g</code> to exit evil insert mode while in Org mode. See below.</li>
+<li><code>C-c</code>: I mapped <code>C-c</code> to go back to normal-mode, from insert-mode in order to make Spacemacs behave just a bit more like Vim. 
+<ul class="org-ul">
+<li>Update <span class="timestamp-wrapper"><span class="timestamp"><span class="time"> 4:06 pm</span><span class="sep"> </span><span class="date">April 10, 2020</span></span></span>: I ended up remapping <code>C-g</code> to exit evil mode because <code>C-c</code> made Magit unusable. I detailed this update here: <a href="customizing-emacs#adding-another-macro-to-exit-evil-insert-mode">Adding Another Macro to Exit Evil Insert Mode</a>. I'm currently only binding it in Org mode and mostly only using Org mode in Emacs at this point, so I'm not sure if this might lead to other problems down the road.</li>
+</ul></li>
+<li><code>SPC SPC</code>: Execute Emacs commands by name.</li>
+<li><code>SPC q s</code>: Quit Emacs and save all buffers.</li>
+<li><code>SPC q r</code>: Restart Emacs and resume layouts. This is the best!
+<ul class="org-ul">
+<li>Just needed to add a call to (server-start) in my spacemacs config file in order to trigger the <a href="http://wikemacs.org/wiki/Emacs_server">Emacs server</a> to restart at the same time.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3c0500a" class="outline-2">
+<h2 id="windows"><a class="internal-link" href="#windows">Windows</a></h2>
+<div class="outline-text-2" id="text-org3c0500a">
+<ul class="org-ul">
+<li><code>SPC w V</code>: Split window right and focus. This was one of the things I'd do most frequently in Vim via <code>:vsp</code>.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8014863" class="outline-2">
+<h2 id="workspaces"><a class="internal-link" href="#workspaces">Workspaces</a></h2>
+<div class="outline-text-2" id="text-org8014863">
+<p>
+Workspaces seem to behave kind of like Vim tabs.
+</p>
+
+<ul class="org-ul">
+<li><code>SPC l w</code>: List workspaces.</li>
+<li><code>SPC l w s</code>: Create a new single Window workspace.</li>
+<li><code>SPC l w #</code>: Goto workspace #.</li>
+<li><code>SPC l w p</code>: Goto previous workspace.</li>
+<li><code>g t</code>: Goto next workspace. (Vim/Evil)</li>
+<li><code>g T</code>: Goto previous workspace. (Vim/Evil)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org0e8a56e" class="outline-2">
+<h2 id="files-and-buffers"><a class="internal-link" href="#files-and-buffers">Files and Buffers</a></h2>
+<div class="outline-text-2" id="text-org0e8a56e">
+<ul class="org-ul">
+<li><code>SPC f f</code>: Find in files.</li>
+<li><code>SPC f r</code>: Find in recent files.</li>
+<li><code>SPC f s</code>: Save the current file.</li>
+<li><code>SPC f R</code>: Rename current buffer file.</li>
+<li><code>SPC b d</code>: Kill buffer.</li>
+<li><code>SPC b b</code>: List open buffers.</li>
+<li><code>SPC SPC shell RET</code>: Start an interactive shell.
+<ul class="org-ul">
+<li><code>C-x k</code>: Kill the shell when done with it.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgdfeb70c" class="outline-2">
+<h2 id="org-mode"><a class="internal-link" href="#org-mode">Org mode</a></h2>
+<div class="outline-text-2" id="text-orgdfeb70c">
+<ul class="org-ul">
+<li><code>SPC m i d</code>: Insert drawer.</li>
+<li><code>C-c C-,</code>: Insert <a href="https://orgmode.org/manual/Structure-Templates.html">structured templates</a> including <code>begin_src</code> and <code>begin_export</code>, among others.</li>
+<li><code>&lt;sTab</code>: Typing the sequence <code>&lt; s Tab</code> creates a <code>begin_src</code> block.</li>
+</ul>
+</div>
+
+<div id="outline-container-orgb959c2a" class="outline-3">
+<h3 id="dates"><a class="internal-link" href="#dates">Dates</a></h3>
+<div class="outline-text-3" id="text-orgb959c2a">
+<ul class="org-ul">
+<li><code>SPC m d t</code>: Insert date timestamp. Only contains the date.</li>
+<li><code>SPC u SPC m d t</code>: Insert time and date timestamp.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge51052a" class="outline-3">
+<h3 id="links"><a class="internal-link" href="#links">Links</a></h3>
+<div class="outline-text-3" id="text-orge51052a">
+<ul class="org-ul">
+<li><code>SPC a o l</code>: Store a link to the current file.</li>
+<li><code>SPC m i l</code>: Insert a link. Suggests the most recently stored link first.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org990d1d6" class="outline-3">
+<h3 id="motion"><a class="internal-link" href="#motion">Motion</a></h3>
+<div class="outline-text-3" id="text-org990d1d6">
+<p>
+From <a href="https://orgmode.org/manual/Motion.html">Motion</a>.
+</p>
+
+<ul class="org-ul">
+<li><code>C-c C-p</code>: Jump to previous headline.</li>
+<li><code>C-c C-n</code>: Jump to next headline.</li>
+<li><code>(</code>: Jump to previous sentence.</li>
+<li><code>)</code>: Jump to next sentence.</li>
+<li><code>{</code>: Jump to previous sentence.</li>
+<li><code>}</code>: Jump to next sentence.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org804261d" class="outline-3">
+<h3 id="text"><a class="internal-link" href="#text">Text</a></h3>
+<div class="outline-text-3" id="text-org804261d">
+<ul class="org-ul">
+<li><code>SPC m x b</code>: Make selected text <b>bold</b>.</li>
+<li><code>SPC m x c</code>: Make selected text into <code>code</code>.</li>
+<li><code>SPC m x h</code>: Make selected text <mark class="highlight">highlighted</mark>. Customization. I detailed how <a href="customizing-emacs#adding-a-new-highlighter-font-face">here</a>.</li>
+<li><code>SPC m x i</code>: Make select text <i>italic</i>.</li>
+<li><code>SPC m x s</code>: Make selected text <del>stricken through</del>.</li>
+<li><code>SPC m x u</code>: Make selected text <span class="underline">underlined</span>.</li>
+<li><code>SPC m x v</code>: Make selected text <code>verbatim</code>.</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orga8464b8" class="outline-2">
+<h2 id="git-magit"><a class="internal-link" href="#git-magit">Git / Magit</a></h2>
+<div class="outline-text-2" id="text-orga8464b8">
+<ul class="org-ul">
+<li><code>SPC g s</code>: Magit status for repository of current file.</li>
+</ul>
+</div>
+<div id="outline-container-org884aeda" class="outline-3">
+<h3 id="in-magit-status-buffer"><a class="internal-link" href="#in-magit-status-buffer">In Magit Status Buffer</a></h3>
+<div class="outline-text-3" id="text-org884aeda">
+<p>
+C-c C-c c c~: Commit staged files. Stage files if no files staged.
+</p>
+<ul class="org-ul">
+<li><code>, ,</code>: Finish and save commit message.</li>
+<li><code>, c</code>: Cancel commit.</li>
+<li><code>P u</code>: Push to upstream.</li>
+</ul>
+</div>
+</div>
+</div>
+
+  </div><h1 class="comments-headline">Comments</h1>
+
+  <script src="https://utteranc.es/client.js"
+          repo="zpoley/zacharypoley-blog-comments"
+          issue-term="pathname"
+          theme="github-light"
+          crossorigin="anonymous"
+          async>
+  </script>
+
+  <a class="u-url" href="/notes/emacs-commands" hidden></a>
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <!--
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+        -->
+          <ul class="contact-list" style="margin-bottom: 10px;">
+            <li class="p-name">Zachary Poley</li>
+            <li><a class="u-email" href="mailto:zpoley@gmail.com">zpoley@gmail.com</a></li>
+          </ul>
+
+        <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/zpoley" title="zpoley"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.linkedin.com/in/zpoley" title="zpoley"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg></a></li><li><a rel="me" href="https://twitter.com/zpoley" title="zpoley"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li><li>
+    <a href="/feed.xml">
+      <svg class="svg-icon grey">
+        <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+      </svg>
+    </a>
+  </li>
+</ul>
+</div>
+
+      </div>
+      <div class="footer-col">
+        <p>A place to share my notes and ideas.</p>
+      </div>
+    </div>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+				<ul class="footer-links">
+					<li><a href="/">Posts</a></li>
+					<li><a href="/drafts">Drafts</a></li>
+					<li><a href="/notes">Notes</a></li>
+					<li><a href="/tags">Tags</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+			</div>
+		</div>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

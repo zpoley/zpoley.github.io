@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Org Mode Test Page | Zachary Poley</title>
+  <title>Pinboard Notes | Zachary Poley</title>
   <meta name="generator" content="Jekyll v4.0.0" />
-  <meta property="og:title" content="Org Mode Test Page" />
+  <meta property="og:title" content="Pinboard Notes" />
   <meta name="author" content="Zachary Poley" />
   <meta property="og:locale" content="en_US" />
 
@@ -15,7 +15,7 @@
   <meta property="og:url" content="" />
   <meta property="og:site_name" content="Zachary Poley" />
   <meta property="og:type" content="article" />
-  <meta property="article:published_time" content="2020-02-24 00:00:00 -0800" />
+  <meta property="article:published_time" content="2020-03-31 00:00:00 -0700" />
 
 
   <link rel="stylesheet" href="/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Zachary Poley" />
@@ -42,24 +42,24 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Org Mode Test Page</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Pinboard Notes</h1>
         <div class="tags"><span class="tag">
-              <a href="/tags#emacs">
-                #emacs
+              <a href="/tags#pinboard">
+                #pinboard
               </a>
             </span><span class="tag">
-              <a href="/tags#orgmode">
-                #orgmode
+              <a href="/tags#javascript">
+                #javascript
               </a>
             </span><span class="tag">
-              <a href="/tags#spacemacs">
-                #spacemacs
+              <a href="/tags#bookmarks">
+                #bookmarks
               </a>
-            </span></div><div class="post-meta"><time class="dt-published" datetime="2020-02-24T00:00:00-08:00" itemprop="datePublished">
-        February 24, 2020
+            </span></div><div class="post-meta"><time class="dt-published" datetime="2020-03-31T00:00:00-07:00" itemprop="datePublished">
+        March 31, 2020
       </time><div>
-          Updated<time class="dt-modified time-stamp" datetime="April 19, 2020" itemprop="dateModified">
-            April 19, 2020
+          Updated<time class="dt-modified time-stamp" datetime="April 10, 2020" itemprop="dateModified">
+            April 10, 2020
           </time>
         </div></div>
   </header>
@@ -69,75 +69,49 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#about-nothing">About Nothing</a></li>
-<li><a href="#testing">Testing</a></li>
-<li><a href="#hidden">Testing Hidden 1</a></li>
-<li><a href="#hidden">Testing Hidden 2</a></li>
+<li><a href="#update">Update</a></li>
+<li><a href="#thoughts">Thoughts</a></li>
+<li><a href="#pinboard-bookmarklet">Pinboard Bookmarklet</a></li>
 </ul>
 </div>
 </div>
 
+<div id="outline-container-org37774fb" class="outline-2">
+<h2 id="update"><a class="internal-link" href="#update">Update</a></h2>
+<div class="outline-text-2" id="text-org37774fb">
 <p>
-A place to store a few Org mode experiments for reference.
-</p>
-
-<div class="ASIDE">
-<p>
-Testing aside mode.
-</p>
-
-</div>
-
-<p>
-And, here's where things continue to go.
-</p>
-
-<div id="outline-container-org9a9397d" class="outline-3">
-<h3 id="org9a9397d"><span class="todo TODO">TODO</span> Add some content here.</h3>
-<div class="outline-text-3" id="text-org9a9397d">
-<p>
-Something for a footnote. <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>
+<span class="timestamp-wrapper"><span class="timestamp"><span class="time">11:40 am</span><span class="sep"> </span><span class="date">April 8, 2020</span></span></span>
 </p>
 
 <p>
-Something
-Other
+Went through a couple iterations on this. First, I made a bookmarklet similar to the <a href="#pinboard-bookmarklet">Pinboard Bookmarklet</a> below, that did an asynchronous form POST in order to include the <code>document.body.innerHTML</code>, but found that it ran afoul of some site <a href="https://en.wikipedia.org/wiki/Content_Security_Policy">Content Security Policies</a> like GitHub, which I bookmark pretty often. Unfortunately, there doesn't seem to be a way to avoid CSPs while using a bookmarklet since the Javascript ends up running in the context of the current page. So, the final/current iteration involves incorporating bookmarking in my own Google Chrome Extension which uses Message Passing to enable the background page to send the <code>document.body.innerHTML</code> to the server outside of the page context, thereby circumventing Content Security Policy issues. Will update when I share the source code for this Chrome Extension. 
 </p>
 </div>
+</div>
 
-<div id="outline-container-org6747c5c" class="outline-4">
-<h4 id="org6747c5c"><span class="todo TODO">TODO</span> And, yet a deeper level   <span class="tag"><span class="blog"><a href="/tags#blog">#blog</a></span> <span class="emacs"><a href="/tags#emacs">#emacs</a></span></span></h4>
+<div id="outline-container-orga16b14a" class="outline-2">
+<h2 id="thoughts"><a class="internal-link" href="#thoughts">Thoughts</a></h2>
+<div class="outline-text-2" id="text-orga16b14a">
+<p>
+I’d like to use Pinboard for archiving my bookmarks, but would like my new bookmarks to <b>flow directly into my personal knowledge base instantly</b>, so that I can quickly reference them in notes for adding context/mentioning.
+</p>
+
+<p>
+I think I can probably write a new bookmarklet that hits my local webserver, and stores the link and associated files locally, and at the same time hit the <a href="https://pinboard.in/api/">Pinboard API</a> to save the bookmark there as well for backup.
+</p>
 </div>
 </div>
 
-<div id="outline-container-org8909c9f" class="outline-2">
-<h2 id="about-nothing"><a class="internal-link" href="#about-nothing">About Nothing</a></h2>
+<div id="outline-container-org1b15fc7" class="outline-2">
+<h2 id="pinboard-bookmarklet"><a class="internal-link" href="#pinboard-bookmarklet">Pinboard Bookmarklet</a></h2>
+<div class="outline-text-2" id="text-org1b15fc7">
+<div class="org-src-container">
+<pre class="src src-:javascript">q=location.href;
+p=document.title;
+void(t=open('https://pinboard.in/add?later=yes&amp;noui=yes&amp;jump=close&amp;url='+encodeURIComponent(q)+'&amp;title='+encodeURIComponent(p),'Pinboard','toolbar=no,width=100,height=100'));
+t.blur();
+</pre>
 </div>
-
-<div id="outline-container-org1b8917d" class="outline-2">
-<h2 id="testing"><a class="internal-link" href="#testing">Testing</a></h2>
-</div>
-
-<div id="outline-container-org5ab35ca" class="outline-2">
-
-<div class="outline-text-2" id="text-hidden">
-</div>
-</div>
-
-<div id="outline-container-orgc27c257" class="outline-2">
-
-<div class="outline-text-2" id="text-hidden">
-</div>
-</div>
-<div id="footnotes">
-<h2 class="footnotes">Footnotes: </h2>
-<div id="text-footnotes">
-
-<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
-Test footnote.
-</p></div></div>
-
-
 </div>
 </div>
 
@@ -151,7 +125,7 @@ Test footnote.
           async>
   </script>
 
-  <a class="u-url" href="/notes/org-test-page" hidden></a>
+  <a class="u-url" href="/notes/pinboard-notes" hidden></a>
 </article>
 
       </div>

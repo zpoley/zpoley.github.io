@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Customizing Emacs | Zachary Poley</title>
+  <meta name="generator" content="Jekyll v4.0.0" />
+  <meta property="og:title" content="Customizing Emacs" />
+  <meta name="author" content="Zachary Poley" />
+  <meta property="og:locale" content="en_US" />
+
+  <link rel="canonical" href="" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="Zachary Poley" />
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2020-04-02 00:00:00 -0700" />
+
+
+  <link rel="stylesheet" href="/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Zachary Poley" />
+<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Zachary Poley</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+					<a class="page-link" href="/">Posts</a><a class="page-link" href="/drafts">Drafts</a><a class="page-link" href="/notes">Notes</a><a class="page-link" href="/tags">Tags</a><a class="page-link" href="/about">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Customizing Emacs</h1>
+        <div class="tags"><span class="tag">
+              <a href="/tags#emacs">
+                #emacs
+              </a>
+            </span></div><div class="post-meta"><time class="dt-published" datetime="2020-04-02T00:00:00-07:00" itemprop="datePublished">
+        April 2, 2020
+      </time><div>
+          Updated<time class="dt-modified time-stamp" datetime="April 20, 2020" itemprop="dateModified">
+            April 20, 2020
+          </time>
+        </div></div>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#steps">Steps</a></li>
+<li><a href="#additional-customizations">Additional Customizations</a>
+<ul>
+<li><a href="#adding-a-new-highlighter-font-face">Adding a New Highlighter Font Face</a></li>
+<li><a href="#adding-another-macro-to-exit-evil-insert-mode">Adding Another Macro to Exit Evil Insert Mode</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4664c5f" class="outline-2">
+<h2 id="steps"><a class="internal-link" href="#steps">Steps</a></h2>
+<div class="outline-text-2" id="text-org4664c5f">
+<ol class="org-ol">
+<li>Tried starting with Emacs installed through <code>brew</code> and running in <a href="https://www.iterm2.com/">iTerm2</a>. This setup was hard to customize properly visually. For example, getting leading stars being hidden and displaying properly was quite challenging and in the end still didn't look quite right.</li>
+<li>Started running GUI Emacs installed through the <code>brew</code> port based on <a href="https://blog.aaronbieber.com/2016/12/29/don-t-use-terminal-emacs.html">this article</a>, and because GUI emacs handled Emojis correctly. It also has great out of the box support for themes and fonts that just worked rather than having to spend time figuring out how to customize it.</li>
+<li>Looked through themes and finally found the <a href="https://github.com/fniessen/emacs-leuven-theme">leuven</a> theme. The colors are not quite my favorite, but I like a lot of the styling, and have been used to lighter colored terminals recently.
+<ul class="org-ul">
+<li>Update <span class="timestamp-wrapper"><span class="timestamp"><span class="time"> 3:05 pm</span><span class="sep"> </span><span class="date">April 10, 2020</span></span></span>: I ended up creating my own custom version of leuven, and have begun to make minor changes to it so far.</li>
+</ul></li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-orgc03bb31" class="outline-2">
+<h2 id="additional-customizations"><a class="internal-link" href="#additional-customizations">Additional Customizations</a></h2>
+<div class="outline-text-2" id="text-orgc03bb31">
+</div>
+<div id="outline-container-org6a8befa" class="outline-3">
+<h3 id="adding-a-new-highlighter-font-face"><a class="internal-link" href="#adding-a-new-highlighter-font-face">Adding a New Highlighter Font Face</a></h3>
+<div class="outline-text-3" id="text-org6a8befa">
+<p>
+A lot of what I've been trying to do with Emacs has been trying to achieve some parity or similarity to things I've become super accustomed to in Evernote. So, one of the things I was missing was the ability to have highlighted text, that looks like I ran a highlighter marker over it. It took a bit of playing around and digging into the org mode source code, but the below is working for me in my Spacemacs config file.
+</p>
+
+<p>
+I have this running in my <code>with-eval-after-load 'org</code> block:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp" id="orga5cd840"><span class="org-comment-delimiter">; </span><span class="org-comment">Define a new font-face with background color yellow.</span>
+<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">defface</span> <span class="org-variable-name">org-highlight</span>
+  '<span class="org-rainbow-delimiters-depth-2">(</span><span class="org-rainbow-delimiters-depth-3">(</span><span class="org-rainbow-delimiters-depth-4">(</span><span class="org-rainbow-delimiters-depth-5">(</span>background light<span class="org-rainbow-delimiters-depth-5">)</span><span class="org-rainbow-delimiters-depth-4">)</span> <span class="org-rainbow-delimiters-depth-4">(</span><span class="org-builtin">:background</span> <span class="org-string">"yellow"</span><span class="org-rainbow-delimiters-depth-4">)</span><span class="org-rainbow-delimiters-depth-3">)</span>
+    <span class="org-rainbow-delimiters-depth-3">(</span><span class="org-rainbow-delimiters-depth-4">(</span><span class="org-rainbow-delimiters-depth-5">(</span>background dark<span class="org-rainbow-delimiters-depth-5">)</span><span class="org-rainbow-delimiters-depth-4">)</span> <span class="org-rainbow-delimiters-depth-4">(</span><span class="org-builtin">:background</span> <span class="org-string">"yellow"</span><span class="org-rainbow-delimiters-depth-4">)</span><span class="org-rainbow-delimiters-depth-3">)</span><span class="org-rainbow-delimiters-depth-2">)</span>
+  <span class="org-doc">"Face used for highlights."</span>
+  <span class="org-builtin">:group</span> 'org-faces<span class="org-rainbow-delimiters-depth-1">)</span>
+
+<span class="org-comment-delimiter">; </span><span class="org-comment">Add a new RegExp match for new font face characters.</span>
+<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">defun</span> <span class="org-function-name">org-add-my-extra-fonts</span> <span class="org-rainbow-delimiters-depth-2">()</span>
+  <span class="org-doc">"Add hightlight font."</span>
+  <span class="org-rainbow-delimiters-depth-2">(</span>add-to-list 'org-font-lock-extra-keywords '<span class="org-rainbow-delimiters-depth-3">(</span><span class="org-string">"</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">(</span></span><span class="org-string">`</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">)</span></span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">(</span></span><span class="org-string">[</span><span class="org-string"><span class="org-negation-char">^</span></span><span class="org-string">\n\r\t]+</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">)</span></span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">(</span></span><span class="org-string">`</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">)</span></span><span class="org-string">"</span> <span class="org-rainbow-delimiters-depth-4">(</span><span class="org-highlight-numbers-number">1</span> '<span class="org-rainbow-delimiters-depth-5">(</span>face org-highlight invisible t<span class="org-rainbow-delimiters-depth-5">)</span><span class="org-rainbow-delimiters-depth-4">)</span> <span class="org-rainbow-delimiters-depth-4">(</span><span class="org-highlight-numbers-number">2</span> 'org-highlight t<span class="org-rainbow-delimiters-depth-4">)</span> <span class="org-rainbow-delimiters-depth-4">(</span><span class="org-highlight-numbers-number">3</span> '<span class="org-rainbow-delimiters-depth-5">(</span>face org-highlight invisible t<span class="org-rainbow-delimiters-depth-5">)</span><span class="org-rainbow-delimiters-depth-4">)</span><span class="org-rainbow-delimiters-depth-3">)</span> t<span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+
+<span class="org-comment-delimiter">; </span><span class="org-comment">Add hook to enable newly added font face RegExp matcher.</span>
+<span class="org-rainbow-delimiters-depth-1">(</span>add-hook 'org-font-lock-set-keywords-hook #'org-add-my-extra-fonts<span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<p>
+The part that took me the longest to figure out was the Regular Expression for the font-face characters. In this case I'm using the backtick character <code>`</code> as a wrapper like <code>*</code>, or <code>_</code> to highlight a block of text.
+</p>
+
+<p>
+It was <a href="https://emacs.stackexchange.com/questions/35626/how-to-make-my-own-org-mode-text-emphasis-work-again/35632#35632">this Emacs StackExchange</a> post that provided the code for the custom font RegExp matching.
+</p>
+
+<p>
+Then, I was able to leverage <a href="https://www.gonsie.com/blorg/org-highlight.html">Elsa Gonsiorowski's post about highlighting</a> to get the org mode html exporting working:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">defun</span> <span class="org-function-name">my-html-highlight-tag</span> <span class="org-rainbow-delimiters-depth-2">(</span>text backend info<span class="org-rainbow-delimiters-depth-2">)</span>
+  <span class="org-doc">"Transcode `blah` into &lt;mark&gt;blah&lt;/mark&gt; in body text."</span>
+  <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-keyword">when</span> <span class="org-rainbow-delimiters-depth-3">(</span>org-export-derived-backend-p backend 'html<span class="org-rainbow-delimiters-depth-3">)</span>
+    <span class="org-rainbow-delimiters-depth-3">(</span><span class="org-keyword">let</span> <span class="org-rainbow-delimiters-depth-4">(</span><span class="org-rainbow-delimiters-depth-5">(</span>text <span class="org-rainbow-delimiters-depth-6">(</span>replace-regexp-in-string <span class="org-string">"</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">(</span></span><span class="org-string">`</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">)</span></span><span class="org-string">[</span><span class="org-string"><span class="org-negation-char">^</span></span><span class="org-string">\n\r\t]+</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">(</span></span><span class="org-string">`</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">)</span></span><span class="org-string">"</span> <span class="org-string">"&lt;mark class=\"highlight\"&gt;"</span>  text nil nil <span class="org-highlight-numbers-number">1</span> nil<span class="org-rainbow-delimiters-depth-6">)</span><span class="org-rainbow-delimiters-depth-5">)</span><span class="org-rainbow-delimiters-depth-4">)</span>
+      <span class="org-rainbow-delimiters-depth-4">(</span>replace-regexp-in-string <span class="org-string">"</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">(</span></span><span class="org-string">&lt;mark class=\"highlight\"&gt;</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">)</span></span><span class="org-string">[</span><span class="org-string"><span class="org-negation-char">^</span></span><span class="org-string">\n\r\t]+</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">(</span></span><span class="org-string">`</span><span class="org-string"><span class="org-regexp-grouping-backslash">\\</span></span><span class="org-string"><span class="org-regexp-grouping-construct">)</span></span><span class="org-string">"</span> <span class="org-string">"&lt;/mark&gt;"</span> text nil nil <span class="org-highlight-numbers-number">2</span> nil<span class="org-rainbow-delimiters-depth-4">)</span><span class="org-rainbow-delimiters-depth-3">)</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+
+<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">setq</span> org-export-filter-plain-text-functions '<span class="org-rainbow-delimiters-depth-2">(</span>my-html-highlight-tag<span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<p>
+And, finally I added a new Spacemacs leader key shortcut with the following in my .spacemacs file (thanks to some help from <a href="https://emacs.stackexchange.com/a/44098/26890">this emacs StackExchange answer</a>):
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">with-eval-after-load</span> 'org
+
+  <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-keyword">setq</span> org-emphasis-alist
+    '<span class="org-rainbow-delimiters-depth-3">(</span><span class="org-rainbow-delimiters-depth-4">(</span><span class="org-string">"*"</span> bold<span class="org-rainbow-delimiters-depth-4">)</span>
+      <span class="org-rainbow-delimiters-depth-4">(</span><span class="org-string">"`"</span> highlight<span class="org-rainbow-delimiters-depth-4">)</span>
+      <span class="org-rainbow-delimiters-depth-4">(</span><span class="org-string">"/"</span> italic<span class="org-rainbow-delimiters-depth-4">)</span>
+      <span class="org-rainbow-delimiters-depth-4">(</span><span class="org-string">"_"</span> underline<span class="org-rainbow-delimiters-depth-4">)</span>
+      <span class="org-rainbow-delimiters-depth-4">(</span><span class="org-string">"="</span> org-verbatim verbatim<span class="org-rainbow-delimiters-depth-4">)</span>
+      <span class="org-rainbow-delimiters-depth-4">(</span><span class="org-string">"~"</span> org-code verbatim<span class="org-rainbow-delimiters-depth-4">)</span>
+      <span class="org-rainbow-delimiters-depth-4">(</span><span class="org-string">"+"</span> <span class="org-rainbow-delimiters-depth-5">(</span><span class="org-builtin">:strike-through</span> t<span class="org-rainbow-delimiters-depth-5">)</span><span class="org-rainbow-delimiters-depth-4">)</span><span class="org-rainbow-delimiters-depth-3">)</span><span class="org-rainbow-delimiters-depth-2">)</span>
+
+  <span class="org-rainbow-delimiters-depth-2">(</span>spacemacs/set-leader-keys-for-major-mode 'org-mode
+    <span class="org-string">"xh"</span> <span class="org-rainbow-delimiters-depth-3">(</span><span class="org-keyword">spacemacs|org-emphasize</span> spacemacs/org-highlight ?`<span class="org-rainbow-delimiters-depth-3">)</span><span class="org-rainbow-delimiters-depth-2">)</span>
+<span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgd539f5c" class="outline-3">
+<h3 id="adding-another-macro-to-exit-evil-insert-mode"><a class="internal-link" href="#adding-another-macro-to-exit-evil-insert-mode">Adding Another Macro to Exit Evil Insert Mode</a></h3>
+<div class="outline-text-3" id="text-orgd539f5c">
+<p>
+Coming from Vim, I really missed using <code>C-c</code> to exit insert mode immediately. Initially I found a simple way to map <code>C-c</code> to enter evil-normal-state (existing evil-insert-state). 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">with-eval-after-load</span> 'org
+  <span class="org-rainbow-delimiters-depth-2">(</span>define-key evil-insert-state-map <span class="org-rainbow-delimiters-depth-3">(</span>kbd <span class="org-string">"C-c"</span><span class="org-rainbow-delimiters-depth-3">)</span> 'evil-normal-state<span class="org-rainbow-delimiters-depth-2">)</span>
+<span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<p>
+However, once I had learned enough about Spacemacs and wanted to try enabling the <a href="https://develop.spacemacs.org/layers/%2Bsource-control/git/README.html">Git layer</a>, I found that it broke my <code>C-c</code> binding. It actually took me a while to figure out that the Spacemacs default for exiting evil-insert-mode is actually <code>Shift-Esc</code> on Mac.
+</p>
+
+<p>
+Anyway, after becoming familiar enough with Emacs and Spacemacs, and becoming accustomed to using the <code>C-g</code> macro to exit commands, I tried replacing my <code>C-c</code> binding with <code>C-g</code> so that it will play nicely with Spacemacs and I can use magit. This is the current resting place for my <code>C-g</code> binding to exit evil-insert mode in my <code>.spacemacs</code> file:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">with-eval-after-load</span> 'org
+  <span class="org-rainbow-delimiters-depth-2">(</span>define-key evil-insert-state-map <span class="org-rainbow-delimiters-depth-3">(</span>kbd <span class="org-string">"C-g"</span><span class="org-rainbow-delimiters-depth-3">)</span> 'evil-normal-state<span class="org-rainbow-delimiters-depth-2">)</span>
+<span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+  </div><h1 class="comments-headline">Comments</h1>
+
+  <script src="https://utteranc.es/client.js"
+          repo="zpoley/zacharypoley-blog-comments"
+          issue-term="pathname"
+          theme="github-light"
+          crossorigin="anonymous"
+          async>
+  </script>
+
+  <a class="u-url" href="/notes/customizing-emacs" hidden></a>
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <!--
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+        -->
+          <ul class="contact-list" style="margin-bottom: 10px;">
+            <li class="p-name">Zachary Poley</li>
+            <li><a class="u-email" href="mailto:zpoley@gmail.com">zpoley@gmail.com</a></li>
+          </ul>
+
+        <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/zpoley" title="zpoley"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.linkedin.com/in/zpoley" title="zpoley"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg></a></li><li><a rel="me" href="https://twitter.com/zpoley" title="zpoley"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li><li>
+    <a href="/feed.xml">
+      <svg class="svg-icon grey">
+        <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+      </svg>
+    </a>
+  </li>
+</ul>
+</div>
+
+      </div>
+      <div class="footer-col">
+        <p>A place to share my notes and ideas.</p>
+      </div>
+    </div>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+				<ul class="footer-links">
+					<li><a href="/">Posts</a></li>
+					<li><a href="/drafts">Drafts</a></li>
+					<li><a href="/notes">Notes</a></li>
+					<li><a href="/tags">Tags</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+			</div>
+		</div>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
